@@ -21,6 +21,21 @@ public class Main {
 	}
 	
 	public static int countClap(int number) {
-		return 0;
+		
+		
+		String change = Integer.toString(number);
+		String comp = "";
+		int length = change.length();
+		int num = 0;
+		
+		for(int i = 0 ; i < length ; i++ ) {
+			comp=change.substring(i, i+1);
+			if(comp.equals("3") || comp.equals("6") || comp.equals("9")
+					|| comp == "3" || comp == "6" || comp == "9") {
+				num++;
+			}
+			
+		}		
+		return num;
 	}
 }
